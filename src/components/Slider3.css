@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+body {
+  background: grey;
+}
+.active {
+  border: 1px solid red;
+}
+.wrapper {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  margin: 30px auto;
+  overflow: hidden;
+}
+.wrapper .sliders {
+  height: 200px;
+  position: absolute;
+}
+.wrapper .sliders .slider {
+  float: left;
+  width: 200px;
+  height: 200px;
+}
+.wrapper .sliders .slider img {
+  width: 100%;
+  height: 100%;
+}
+.wrapper .arrows {
+  position: absolute;
+  height: 20px;
+  top: 50%;
+  margin-top: -10px;
+  width: 100%;
+}
+.wrapper .arrows .arrow {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  background: gold;
+}
+.wrapper .arrows .arrow:hover {
+  background: #ccc;
+}
+.wrapper .arrows .arrow-left {
+  float: left;
+  margin-left: 5px;
+}
+.wrapper .arrows .arrow-right {
+  float: right;
+  margin-right: 5px;
+}
+.wrapper .dots {
+  width: 100%;
+  height: 20px;
+  position: absolute;
+  bottom: 2px;
+  text-align: center;
+}
+.wrapper .dots .dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-left: 5px;
+  background-color: #00b3ee;
+  cursor: pointer;
+}

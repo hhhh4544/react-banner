@@ -1,0 +1,157 @@
+* {
+
+  padding: 0;
+
+  margin: 0;
+
+}
+
+ul, li {
+
+  list-style: none;
+
+}
+
+body {
+
+  background-color: lightgreen;
+
+}
+
+.active {
+
+  border: 1px solid red;
+
+}
+
+.wrapper {
+
+  width: 200px;
+
+  height: 200px;
+
+  position: relative;
+
+  margin: 30px auto;
+
+  overflow: hidden;
+
+  .sliders {
+
+    height: 200px;
+
+    position: absolute;
+
+    .slider {
+
+      float: left;
+
+      width: 200px;
+
+      height: 200px;
+
+      img {
+
+        width: 100%;
+
+        height: 100%;
+
+      }
+
+    }
+
+  }
+
+  .arrows {
+
+    position: absolute;
+
+    height: 20px;
+
+    top: 50%;
+
+    margin-top: -10px;
+
+    width: 100%;
+
+    .arrow {
+
+      width: 20px;
+
+      height: 20px;
+
+      line-height: 20px;
+
+      font-size: 20px;
+
+      text-align: center;
+
+      cursor: pointer;
+
+      background-color: #EEE;
+
+      &:hover {
+
+        background-color: #999;
+
+      }
+
+    }
+
+    .arrow-left {
+
+      float: left;
+
+      margin-left: 5px;
+
+    }
+
+    .arrow-right {
+
+      float: right;
+
+      margin-right: 5px;
+
+    }
+
+  }
+
+  .dots {
+
+    width: 100%;
+
+    height: 20px;
+
+    position: absolute;
+
+    bottom: 2px;
+
+    text-align: center;
+
+    .dot {
+
+      display: inline-block;
+
+      width: 10px;
+
+      height: 10px;
+
+      border-radius: 50%;
+
+      margin-left: 5px;
+
+      background-color: #EEE;
+
+      cursor: pointer;
+
+      &:hover {
+
+        background-color: #999;
+
+      }
+
+    }
+
+  }
+
+}
